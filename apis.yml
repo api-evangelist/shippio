@@ -1,7 +1,28 @@
 aid: shippio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shippio.png
 name: Shippio
-description: Shippio is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Shippio is a Japanese logistics-technology company positioning itself as "Japan's first
+  digital forwarder." It provides cloud-based SaaS for visualizing and streamlining
+  international trade and freight-forwarding operations, combining domain expertise with
+  AI-era digital technology. Its product line includes Shippio Forwarding (a digital
+  forwarding service), Shippio Cargo (trade-management SaaS for shippers/importers-exporters),
+  and Shippio Works (trade-management SaaS for logistics operators), delivered through a
+  multi-sided platform that connects shippers and operators. The company is backed by
+  500 Global. As of this enrichment pass Shippio publishes no public developer portal, API
+  documentation, SDKs, or pricing; its APIs are internal platform APIs referenced only in
+  engineering job postings, so this profile is identity-only with no public API surface.
 url: https://raw.githubusercontent.com/api-evangelist/shippio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Logistics
+- Freight Forwarding
+- Supply Chain
+- International Trade
+- Shipping
+- SaaS
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/shippio-domain-security.yml
 - type: Website
-  url: https://shippio.io
+  url: https://www.shippio.io/en/
+- type: Support
+  url: https://service.shippio.io/contact
+- type: PrivacyPolicy
+  url: https://www.shippio.io/privacy-policy/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
